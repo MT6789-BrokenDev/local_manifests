@@ -1,0 +1,28 @@
+<manifest>
+    <!-- Remotes -->
+    <remote name="BrokenDev" fetch="https://github.com/MT6789-BrokenDev"
+        revision="lineage-20" />
+    <remote name="lineageos" fetch="https://github.com/LineageOS"
+    	revision="lineage-20" />
+    <remote name="nashc-dev" fetch="https://github.com/nashc-dev"
+	    revision="lineage-20" />
+
+    <!-- Device Tree -->
+    <project path="device/xiaomi/rock" name="device_xiaomi_rock"
+        remote="BrokenDev" />
+
+    <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr"
+        remote="BrokenDev" />
+
+    <!-- Hardware -->
+    <project path="hardware/xiaomi" name="android_hardware_xiaomi"
+        remote="lineageos" />
+
+    <project path="hardware/mediatek" name="android_hardware_mediatek" remote="BrokenDev" />
+    <project path="hardware/mediatek/wlan" name="android_hardware_mediatek_wlan" remote="nashc-dev" />
+
+    <!-- Proprietary vendor -->
+    <project path="vendor/xiaomi/rock" name="vendor_xiaomi_rock"
+        remote="BrokenDev" />
+
+</manifest>
